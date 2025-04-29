@@ -1,8 +1,7 @@
+
+
+
 import { Component } from '@angular/core';
-
-// para utilizar el servicio en tab2
-
-import { PhotoService } from "../services/photo.service";
 
 @Component({
   selector: 'app-tab2',
@@ -12,15 +11,6 @@ import { PhotoService } from "../services/photo.service";
 })
 export class Tab2Page {
 
-  constructor(public photoService: PhotoService) { }
-
-  addPhotoToGallery() {
-    this.photoService.addNewToGallery()
-  }
-  async ngOnInit() {
-    await this.photoService.loadSaved();
-  }
+  constructor() {}
 
 }
-
-
